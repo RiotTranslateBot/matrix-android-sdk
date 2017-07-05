@@ -343,7 +343,7 @@ public class EventDisplay {
      * @param roomState the room state
      * @return the "human readable" display name
      */
-    private static String senderDisplayNameForEvent(Event event, EventContent eventContent, EventContent prevEventContent,  RoomState roomState) {
+    public static String senderDisplayNameForEvent(Event event, EventContent eventContent, EventContent prevEventContent,  RoomState roomState) {
         String senderDisplayName = event.getSender();
 
         if (!event.isRedacted()) {
